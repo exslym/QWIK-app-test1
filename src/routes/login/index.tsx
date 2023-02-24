@@ -4,10 +4,11 @@ import QwikTextField from '~/components/QwikTextField';
 import styles from './style.scss?inline';
 
 export default component$(() => {
+	useStylesScoped$(styles);
+
 	const username = useRef();
 	const password = useRef();
 
-	useStylesScoped$(styles);
 	return (
 		<div class='container'>
 			<div class='input'>
